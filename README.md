@@ -25,5 +25,10 @@ Project URLs:
 ## Usage
 
 ```
-docker run -e MINITEL_SERVER="ws://3611.re/ws" --rm -it uzer/miedit-emulator:latest
+docker run \
+  -e MINITEL_SERVER="ws://3611.re/ws" \
+  -p "3614:8080" --rm -it \
+  uzer/miedit-emulator:latest
 ```
+
+Then connect to http://localhost:3614/ in your browser.

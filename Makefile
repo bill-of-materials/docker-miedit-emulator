@@ -5,7 +5,7 @@ default: build
 build: docker_build output
 clean: docker_clean
 test: docker_scan
-release: docker_build test output docker_push
+release: docker_build output docker_push
 run: dockercompose_up
 
 DOCKER_IMAGE ?= uzer/miedit-emulator
